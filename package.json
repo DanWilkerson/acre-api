@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "needle": "^0.7.11"
+  }
+}
