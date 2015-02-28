@@ -103,6 +103,6 @@ Example output:
 	}
 
 #Acknowledgements
-The Allegheny County Real Estate API is maintained by [Dan Wilkerson]('http://danwilkerson.com') and is in no way associated with the government of Allegheny County, its affiliates, or its subsidiaries.
+The Allegheny County Real Estate API is maintained by [Dan Wilkerson](http://danwilkerson.com) and is in no way associated with the government of Allegheny County, its affiliates, or its subsidiaries.
 
-&copy;2015 Dan Wilkerson under the MIT License.
+&copy;2015 Dan Wilkerson under the [MIT License](http://opensource.org/licenses/mit-license.php).
