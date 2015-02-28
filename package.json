@@ -1,6 +1,25 @@
 {
+  "name": "acre-api",
+  "version": "0.1.1",
+  "engines": {
+	"node": "0.10.28"
+  },
+  "author": "Dan Wilkerson",
   "dependencies": {
     "cheerio": "^0.18.0",
     "needle": "^0.7.11"
+  },
+  "scripts": {
+	"test": "echo \"Error: no test scripts defined\" && exit 1"
+  },
+  "keywords": [
+    "real estate",
+    "allegheny county",
+    "pittsburgh"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanWilkerson/acre-api"
   }
 }
