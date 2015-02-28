@@ -1,6 +1,7 @@
 #The Unofficial Allegheny County Real Estate API
-An unofficial API for retrieving property data from the Allegheny County Real Estate web service.
+An unofficial NodeJS API for retrieving property data from the Allegheny County Real Estate web service.
 ##Getting Started
+
 	npm install acre-api
 	
 	var acreApi = require('acreApi');
@@ -16,6 +17,7 @@ An unofficial API for retrieving property data from the Allegheny County Real Es
 ##Streets
 ###getStreet
 Get the first 20 houses on a particular street.The street name should not include St, Dr, or Ave.
+
 	acreApi.getStreet('Liberty', function(err, houses) {	
 		if(err) {
 			console.log(err);
@@ -24,7 +26,9 @@ Get the first 20 houses on a particular street.The street name should not includ
 			console.log(houses);
 		}
 	});
+
 Example output:
+
 	[ 
 		{ 
 			parcel_id: '0001-C-00200-0000-01',
@@ -46,6 +50,7 @@ Example output:
 			vacant: 'Yes' 
 		}, ...
 	]
+
 ##House:
 ###getParcel
 Returns data on a specific Parcel ID. Parcel ID must be 5 parts, separated by dashes.
@@ -58,7 +63,9 @@ Returns data on a specific Parcel ID. Parcel ID must be 5 parts, separated by da
 			console.log(parcel);
 		}
 	});
+
 Example output:
+
 	{
 		parcel_id: '0001-C-00200-0000-01',
 		municipality: '101  PITTSBURGH - 1ST WARD',
@@ -94,5 +101,6 @@ Example output:
 			 total_value: 632400
 		}
 	}
+
 #Acknowledgements
 The Allegheny County Real Estate API is maintained by [Dan Wilkerson]('http://danwilkerson.com') and is in no way associated with the government of Allegheny County, its affiliates, or its subsidiaries.
