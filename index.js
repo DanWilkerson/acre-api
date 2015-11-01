@@ -286,6 +286,13 @@ var street = (function(){
 
 			}
 
+      // If we have no results, just call our callback
+      if(Object.keys(pages).length === 0) {
+
+        return callback(null, _parcels);
+
+      }
+
 			for(key in pages) {
 				
 				if(pages.hasOwnProperty(key)) {
@@ -295,20 +302,14 @@ var street = (function(){
 					_state.__EVENTTARGET = pages[key];
 					_getResultsPage(_state, function(err, parcels) {
 
-						if(err) {
+						if(err) return callback(err);
 
-							callback(err);
+            _parcels = _parcels.concat(parcels);
+            reqCounter--;
 
-						} else {
+            if(reqCounter === 0 && finishedPagination ) {
 
-							_parcels = _parcels.concat(parcels);
-							reqCounter--;
-
-							if(reqCounter === 0 && finishedPagination ) {
-
-								callback(null, _parcels);
-
-							}
+              return callback(null, _parcels);
 
 						}
 
