@@ -200,13 +200,16 @@ Gets information about the ownership history of the parcel.
 		deedPage: '371',
 		ownerHistory: [{
 			owner: '',
-			saleDate: ''
+			saleDate: '',
+      salePrice: 1
 		}, {
 			owner: 'ANN MEDIS',
-			saleDate: '2/8/1993'
+			saleDate: '2/8/1993',
+      salePrice: 33000
 		}, {
 			owner: 'BORETSKY ROBERT H & KAREN R (W)',
-			saleDate: '9/1/2000'
+			saleDate: '9/1/2000',
+      salePrice: 125000
 		}]
 	}
 
