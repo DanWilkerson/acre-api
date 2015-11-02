@@ -208,7 +208,7 @@ Gets information about the ownership history of the parcel.
       salePrice: 33000
 		}, {
 			owner: 'BORETSKY ROBERT H & KAREN R (W)',
-			saleDate: '9/1/2000',
+      saleDate: '9/1/2000',
       salePrice: 125000
 		}]
 	}
