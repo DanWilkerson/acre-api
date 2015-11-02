@@ -201,15 +201,15 @@ Gets information about the ownership history of the parcel.
 		ownerHistory: [{
 			owner: '',
 			saleDate: '',
-      salePrice: 1
+			salePrice: 1
 		}, {
 			owner: 'ANN MEDIS',
 			saleDate: '2/8/1993',
-      salePrice: 33000
+			salePrice: 33000
 		}, {
 			owner: 'BORETSKY ROBERT H & KAREN R (W)',
-      saleDate: '9/1/2000',
-      salePrice: 125000
+			saleDate: '9/1/2000',
+			salePrice: 125000
 		}]
 	}
 
