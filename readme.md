@@ -62,26 +62,30 @@ Returns general information about a parcel.
 		deedPage: '0',
 		abatement: 'No',
 		lotArea: 2,
-		twentyFifteenFullMarketValue: { 
-			landValue: 7063200,
-			buildingValue: 94595700,
-			totalValue: 101658900 
+		fullMarketValues: {
+			2015:  {
+				landValue: 7063200,
+				buildingValue: 94595700,
+				totalValue: 101658900 
+			},
+			2014: {
+				landValue: 7063200,
+				buildingValue: 94595700,
+				totalValue: 101658900 
+			}
 		},
-		twentyFifteenCountyAssessedValue: {
-			landValue: 7063200,
-			buildingValue: 94595700,
-			totalValue: 101658900 
-		},
-		twentyFourteenFullMarketValue: { 
-			landValue: 7063200,
-			buildingValue: 94595700,
-			totalValue: 101658900 
-		},
-		twentyFourteenCountyAssessedValue: { 
-			landValue: 7063200,
-			buildingValue: 94595700,
-			totalValue: 101658900 
-		}	
+		countyAssessedValues:  {
+			2015: {
+				landValue: 7063200,
+				buildingValue: 94595700,
+				totalValue: 101658900 
+			},
+			2014: {
+				landValue: 7063200,
+				buildingValue: 94595700,
+				totalValue: 101658900 
+			}
+		}
 	};
 
 ###buildingInfo(parcelId, errback)
@@ -377,26 +381,30 @@ Gets all of the parcels on a given block - streetName can match many street name
 		deedPage: '0',
 		abatement: 'No',
 		lotArea: 2,
-		twentyFifteenFullMarketValue: {
-			landValue: 7063200,
-			buildingValue: 94595700,
-			totalValue: 101658900
+		fullMarketValues: {
+			2015: {
+				landValue: 7063200,
+				buildingValue: 94595700,
+				totalValue: 101658900
+			},
+			2014: {
+				landValue: 7063200,
+				buildingValue: 94595700,
+				totalValue: 101658900
+			}
 		},
-		twentyFifteenCountyAssessedValue: {
-			landValue: 7063200,
-			buildingValue: 94595700,
-			totalValue: 101658900
+		countyAssessedValues: {
+			2015: {
+				landValue: 7063200,
+				buildingValue: 94595700,
+				totalValue: 101658900
+			},
+			2014: {
+				landValue: 7063200,
+				buildingValue: 94595700,
+				totalValue: 101658900
+			}
 		},
-		twentyFourteenFullMarketValue: {
-			landValue: 7063200,
-			buildingValue: 94595700,
-			totalValue: 101658900
-		},
-		twentyFourteenCountyAssessedValue: {
-			landValue: 7063200,
-			buildingValue: 94595700,
-			totalValue: 101658900
-		}
 	},{
 		parcelId: '0009-P-00050-0000-00',
 		municipality: '102  PITTSBURGH - 2ND WARD',
@@ -416,26 +424,30 @@ Gets all of the parcels on a given block - streetName can match many street name
 		deedPage: '322',
 		abatement: 'No',
 		lotArea: 2,
-		twentyFifteenFullMarketValue: {
-			landValue: 12000000,
-			buildingValue: 111500000,
-			totalValue: 123500000
+		fullMarketValues: {
+			2015: {
+				landValue: 12000000,
+				buildingValue: 111500000,
+				totalValue: 123500000
+			},
+			2014: {
+				landValue: 12000000,
+				buildingValue: 111500000,
+				totalValue: 123500000
+			}
 		},
-		twentyFifteenCountyAssessedValue: {
-			landValue: 12000000,
-			buildingValue: 111500000,
-			totalValue: 123500000
+		countyAssessedValues: {
+			2015: {
+				landValue: 12000000,
+				buildingValue: 111500000,
+				totalValue: 123500000
+			},
+			2014: {
+				landValue: 12000000,
+				buildingValue: 111500000,
+				totalValue: 123500000
+			}
 		},
-		twentyFourteenFullMarketValue: {
-			landValue: 12000000,
-			buildingValue: 111500000,
-			totalValue: 123500000
-		},
-		twentyFourteenCountyAssessedValue: {
-			landValue: 12000000,
-			buildingValue: 111500000,
-			totalValue: 123500000
-		}
 	},{
 		// ...
 	}]
