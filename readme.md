@@ -4,8 +4,8 @@ An unofficial NodeJS API for retrieving property data from the Allegheny County 
 
 	npm install acre-api
 	
-	var acreApi = require('acreApi');
-	acreApi.street('Liberty', 'Pittsburgh - All Wards', function(err, houses) {
+	var acreApi = require('acre-api');
+	acreApi.street.street('Liberty', 'Pittsburgh - All Wards', function(err, parcels) {
 		if(err) {
 			console.log(err);
 		} else {
@@ -17,7 +17,7 @@ An unofficial NodeJS API for retrieving property data from the Allegheny County 
 ##search(houseNumber, streetName, errback)
 Search for a parcel at a number and street
 
-	acreApi.search(1000, 'Liberty', function(err, house) {
+	acreApi.search(1000, 'Liberty', function(err, parcel) {
 		
 		if(err) {
 			console.log(err);
