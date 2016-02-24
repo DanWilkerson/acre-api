@@ -3,6 +3,12 @@ An unofficial NodeJS API for retrieving property data from the Allegheny County 
 ##Getting Started
 
 	npm install acre-api
+
+Then run
+
+  npm install
+
+Once dependencies have installed, you can use the ACRE API:
 	
 	var acreApi = require('acre-api');
 	acreApi.street.street('Liberty', 'Pittsburgh - All Wards', function(err, parcels) {
