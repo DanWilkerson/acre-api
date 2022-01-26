@@ -1,6 +1,6 @@
-#The Unofficial Allegheny County Real Estate API
+# The Unofficial Allegheny County Real Estate API
 An unofficial NodeJS API for retrieving property data from the Allegheny County Real Estate web service.
-##Getting Started
+## Getting Started
 
 	npm install acre-api
 
@@ -16,7 +16,7 @@ Then use the API by requiring it:
 		}
 	});
 
-##search(houseNumber, streetName, errback)
+## search(houseNumber, streetName, errback)
 Search for a parcel at a number and street
 
 	acreApi.search(1000, 'Liberty', function(err, parcel) {
@@ -29,10 +29,10 @@ Search for a parcel at a number and street
 		}
 	});
 
-##Parcel
+## Parcel
 All parcel methods require a parcel ID
 
-###generalInfo(parcelId, errback)
+### generalInfo(parcelId, errback)
 Returns general information about a parcel.
 
 	acreApi.parcel.generalInfo('0009-P-00150-0000-00', function(err, parcel) {
@@ -90,7 +90,7 @@ Returns general information about a parcel.
 		}
 	};
 
-###buildingInfo(parcelId, errback)
+### buildingInfo(parcelId, errback)
 Gets information about the structure on the parcel, if any.
 
 	acreApi.parcel.buildingInfo('0084-N-00285-0000-00', function(err, parcel) {
@@ -127,7 +127,7 @@ Gets information about the structure on the parcel, if any.
 		livableSquareFeet: 3362
 	}
 
-###taxInfo(parcelId, errback)
+### taxInfo(parcelId, errback)
 Gets tax information about the parcel.
 
 	acreApi.parcel.taxInfo('0084-N-00285-0000-00', function(err, parcel) {
@@ -185,7 +185,7 @@ Gets tax information about the parcel.
 		}
 	}
 
-###ownerHistory(parcelId, errback)
+### ownerHistory(parcelId, errback)
 Gets information about the ownership history of the parcel.
 
 	acreApi.parcel.ownerHistory(parcelId, function(err, parcel) {
@@ -219,7 +219,7 @@ Gets information about the ownership history of the parcel.
 		}]
 	}
 
-###image(parcelId, errback)
+### image(parcelId, errback)
 Gets a link to the exterior photo on file.
 
 	acreApi.parcel.image(parcelId, function(err, parcel) {
@@ -239,7 +239,7 @@ Gets a link to the exterior photo on file.
 		image: 'http://photos.county.allegheny.pa.us/iasworld/iDoc2/Services/GetPhoto.ashx?parid=0084N00285000000&jur=002&Rank=1&size=350x263'
 	}
 
-###comps(parcelId, errback)
+### comps(parcelId, errback)
 Gets back information about comparable parcels.
 
 	acreApi.parcel.comps(parcelId, function(err, parcel) {
@@ -309,10 +309,10 @@ Gets back information about comparable parcels.
 		}]
 	}
 
-##Street
+## Street
 These methods are for retrieving lots of parcels.
 
-###street(streetName, municipality, errback)
+### street(streetName, municipality, errback)
 Returns top-level information on all of the parcels on a given street within a given municipality. streetName can match many street names.
 
 	acreApi.street.street('Liberty', 'Pittsburgh - All Wards', function(err, parcels) {
@@ -352,7 +352,7 @@ Returns top-level information on all of the parcels on a given street within a g
 		// ...
 	}]
 
-###block(blockNumber, streetName, errback)
+### block(blockNumber, streetName, errback)
 Gets all of the parcels on a given block - streetName can match many street names. 
 
 	acreApi.street.block(1000, 'Liberty', function(err, parcels) {
@@ -454,10 +454,10 @@ Gets all of the parcels on a given block - streetName can match many street name
 		// ...
 	}]
 
-##Municipalities
+## Municipalities
 Methods for finding municipal codes.
 
-###search(municipality)
+### search(municipality)
 Returns the municipal code for a given municipal name, if any.
 
 	var muniId = acreApi.municipality.search('Pittsburgh - All Wards');
@@ -466,7 +466,7 @@ Returns the municipal code for a given municipal name, if any.
 	// Outputs
 	1
 
-###all()
+### all()
 Returns all of the municipalities
 
 	var muniIndex = acreApi.municipality.all();
@@ -481,7 +481,7 @@ Returns all of the municipalities
 		...
 	}
 
-#Acknowledgements
+# Acknowledgements
 The Allegheny County Real Estate API is maintained by [Dan Wilkerson](http://danwilkerson.com) and is in no way associated with the government of Allegheny County, its affiliates, or its subsidiaries.
 
 &copy;2015 Dan Wilkerson under the [MIT License](http://opensource.org/licenses/mit-license.php).
