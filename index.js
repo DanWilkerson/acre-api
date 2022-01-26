@@ -36,9 +36,11 @@ var search = (function(){
 			state.radio1 = 'Address';
 			state.txtStreetName = streetName;
 			state.txtStreetNum = houseNumber;
-      state.hiddenInputToUpdateATBuffer_CommonToolkitScripts = 1;
+			state.btnSearch = 'Search';
+			state.TextBox2 = '';
+      state.hiddenInputToUpdateATBuffer_CommonToolkitScripts = 0;
 
-			callAcre('POST', 'search', state, function(err, html) {
+			Api('POST', 'search', state, function(err, html) {
 
 				if(err) {
 
@@ -218,9 +220,10 @@ var street = (function(){
 			state.radio1          = 'Address';
 			state.__LASTFOCUS     = '';
 			state.__EVENTARGUMENT = '';
+			state.btnSearch = 'Search';
+      state.hiddenInputToUpdateATBuffer_CommonToolkitScripts = 0;
 
 			delete state.undefined;
-			delete state.btnSearch;
 			delete state.TextBox2;
 			delete state['Header1$btnLogInOut'];
 			delete state['Header1$Button1'];

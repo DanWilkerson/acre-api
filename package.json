@@ -2,12 +2,12 @@
   "name": "acre-api",
   "version": "0.1.4",
   "engines": {
-    "node": "0.10.28"
+    "node": "v16.13.2"
   },
   "author": "Dan Wilkerson",
   "dependencies": {
-    "cheerio": "^0.18.0",
-    "needle": "^0.7.11"
+    "cheerio": "^1.0.0-rc.10",
+    "needle": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test scripts defined\" && exit 1"
