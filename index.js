@@ -57,8 +57,16 @@ var search = (function(){
 
 		function _handleResponse(html) {
 
-			var parcel = Parser.generalInfo(html);
-			callback(null, parcel);
+			try {
+
+				var parcel = Parser.generalInfo(html);
+				callback(null, parcel);
+
+			} catch(e) {
+
+				callback(e);
+
+			}
 
 		}
 
@@ -114,8 +122,16 @@ var parcel = (function(){
 
 			} else {
 
-				var parcelData = Parser[endpoint](html);
-				callback(null, parcelData);
+				try {
+
+					var parcelData = Parser[endpoint](html);
+					callback(null, parcelData);
+
+				} catch(e) {
+
+					callback(e);
+
+				}
 
 			}
 
@@ -200,9 +216,17 @@ var street = (function(){
 
 						} else {
 
-							var parcels = Parser.searchResults(html);
-							_parcels = _parcels.concat(parcels);
-							_paginationHandler(html, callback);
+							try {
+
+								var parcels = Parser.searchResults(html);
+								_parcels = _parcels.concat(parcels);
+								_paginationHandler(html, callback);
+
+							} catch(e) {
+
+								callback(e);
+
+							}
 
 						}
 
@@ -242,8 +266,16 @@ var street = (function(){
 
 				} else {
 
-					var parcels = Parser.searchResults(html);
-					callback(null, parcels);
+					try {
+
+						var parcels = Parser.searchResults(html);
+						callback(null, parcels);
+
+					} catch(e) {
+
+						callback(e);
+
+					}
 
 				}
 
@@ -273,9 +305,16 @@ var street = (function(){
 
 					} else {
 
-						var parcels = Parser.searchResults(html);
-						_parcels = _parcels.concat(parcels);
-						_paginationHandler(html, callback);	
+						try {
+							var parcels = Parser.searchResults(html);
+							_parcels = _parcels.concat(parcels);
+							_paginationHandler(html, callback);	
+
+						} catch (e) {
+
+							callback(e);
+
+						}
 
 					}
 
